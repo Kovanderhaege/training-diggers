@@ -11,6 +11,14 @@ public class SimpleTask extends AbstractTask{
         this.priority = priority;
     }
 
+    public Priority getPriority() {
+        return priority;
+    }
+
+    public void setPriority(Priority priority) {
+        this.priority = priority;
+    }
+
     @Override
     public String getSummary() {
         return "[SIMPLE] " + getTitle() + " " + priority.toString();
