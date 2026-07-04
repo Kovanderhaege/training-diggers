@@ -1,6 +1,6 @@
 package fr.formation.taskmanager.service;
 
-import fr.formation.taskmanager.model.AbstractTask;
+import fr.formation.taskmanager.model.task.AbstractTask;
 import fr.formation.taskmanager.model.Priority;
 import fr.formation.taskmanager.model.TaskId;
 

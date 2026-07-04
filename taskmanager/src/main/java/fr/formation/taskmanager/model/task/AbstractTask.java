@@ -1,4 +1,6 @@
-package fr.formation.taskmanager.model;
+package fr.formation.taskmanager.model.task;
+
+import fr.formation.taskmanager.model.TaskId;
 
 import java.time.LocalDate;
 import java.util.Objects;

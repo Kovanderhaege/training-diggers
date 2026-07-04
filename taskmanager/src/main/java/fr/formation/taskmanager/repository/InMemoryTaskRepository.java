@@ -1,6 +1,6 @@
 package fr.formation.taskmanager.repository;
 
-import fr.formation.taskmanager.model.AbstractTask;
+import fr.formation.taskmanager.model.task.AbstractTask;
 import fr.formation.taskmanager.model.TaskId;
 
 import java.util.HashMap;

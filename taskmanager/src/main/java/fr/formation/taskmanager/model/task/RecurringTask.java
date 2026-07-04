@@ -1,10 +1,11 @@
-package fr.formation.taskmanager.model;
+package fr.formation.taskmanager.model.task;
 
-import java.security.Principal;
+import fr.formation.taskmanager.model.TaskId;
+
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class RecurringTask extends AbstractTask{
+public class RecurringTask extends AbstractTask {
 
     private int intervalDays;
 
