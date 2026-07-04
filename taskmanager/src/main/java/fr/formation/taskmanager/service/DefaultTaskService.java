@@ -21,6 +21,9 @@ public class DefaultTaskService implements TaskService{
 
     @Override
     public void addTask(AbstractTask task) {
+        if(task.getTitle().isEmpty()){
+            throw new IllegalArgumentException("title is empty");
+        }
         taskRepository.save(task);
     }
 

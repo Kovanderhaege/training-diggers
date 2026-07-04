@@ -25,6 +25,7 @@ public class TaskAnalyzer {
                 .toList();
     }
 
+    //un get sur un optional vide throw une erreur, on peut faire isPresent dessus pour s'assurer qu'il n'est pas vide
     public static Optional<AbstractTask> findMostUrgent(List<AbstractTask> tasks) {
         return tasks.stream()
                 .filter(abstractTask -> abstractTask instanceof SimpleTask)
