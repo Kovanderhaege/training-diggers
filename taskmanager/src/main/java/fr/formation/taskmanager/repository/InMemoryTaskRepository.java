@@ -12,6 +12,11 @@ public class InMemoryTaskRepository implements TaskRepository {
 
     private final Map<TaskId, AbstractTask> tasks = new HashMap<>();
 
+    /**
+     * Constructeur inutile : il est vide et fait exactement la même chose que
+     * le constructeur par défaut que Java génère automatiquement si on ne
+     * déclare aucun constructeur dans la classe.
+     */
     public InMemoryTaskRepository() {
     }
 

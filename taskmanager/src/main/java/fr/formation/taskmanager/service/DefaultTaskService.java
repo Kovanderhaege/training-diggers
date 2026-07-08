@@ -31,6 +31,7 @@ public class DefaultTaskService implements TaskService{
     public void completeTask(TaskId id) {
         taskRepository.findById(id)
                 .ifPresentOrElse(AbstractTask::markAsDone,
+                		// il faut créer une exception metier du genre NotFoundException
                 () -> {throw new IllegalStateException("Task with id " + id + " not found");}
         );
     }

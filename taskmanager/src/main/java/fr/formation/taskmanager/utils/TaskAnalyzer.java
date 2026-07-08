@@ -30,6 +30,10 @@ public class TaskAnalyzer {
         return tasks.stream()
                 .filter(abstractTask -> abstractTask instanceof SimpleTask)
                 .filter(abstractTask -> !abstractTask.isDone())
+                /**
+                 * ici il faut caster en simpleTask et filtrer sur les tâche HIGH comme c'est 
+                 * spécifier dans l'exercice .map(SimpleTask.class::cast).filter(st -> st.getPriority() == Priority.HIGH)
+                 */
                 .max(Comparator.comparing(AbstractTask::getCreatedAt));
 
 //                pas trop compris, dans l'exo on demande un optional task en valeur de retour mais aussi d'afficher le résumé ou "aucune tache urgente"
