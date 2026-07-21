@@ -10,9 +10,9 @@ public interface TaskRepository {
 
     void save(AbstractTask task);
 
-    Optional<AbstractTask> findById(TaskId id);
+    Optional<AbstractTask> findById(int id);
 
     List<AbstractTask> findAll();
 
-    void delete(TaskId id);
+    void delete(int id);
 }

@@ -10,18 +10,18 @@ import java.util.Optional;
 
 public class InMemoryTaskRepository implements TaskRepository {
 
-    private final Map<TaskId, AbstractTask> tasks = new HashMap<>();
+    private final Map<Integer, AbstractTask> tasks = new HashMap<>();
 
     public InMemoryTaskRepository() {
     }
 
     @Override
     public void save(AbstractTask task) {
-        tasks.put(task.getId(), task);
+        tasks.put(task.getId().id(), task);
     }
 
     @Override
-    public Optional<AbstractTask> findById(TaskId id) {
+    public Optional<AbstractTask> findById(int id) {
         return Optional.ofNullable(tasks.get(id));
     }
 
@@ -31,7 +31,7 @@ public class InMemoryTaskRepository implements TaskRepository {
     }
 
     @Override
-    public void delete(TaskId id) {
+    public void delete(int id) {
         tasks.remove(id);
     }
 }

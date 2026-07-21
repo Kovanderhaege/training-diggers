@@ -14,6 +14,10 @@ public class RecurringTask extends AbstractTask {
         this.intervalDays = intervalDays;
     }
 
+    public int getIntervalDays() {
+        return intervalDays;
+    }
+
     @Override
     public String getSummary(){
         return "[SIMPLE] " + getTitle() + " (tous les " + intervalDays + " jours)";
